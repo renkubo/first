@@ -151,18 +151,27 @@ public class Question1 {
 		
 		System.out.println(priceInt);
 		
-		//Q10
+		//Q9
 		//文字列numStrを宣言
 		String numStr = "123";
 		
 		//以下で文字列を数字だけが入力された場合はint型に直し出力
 		 try {
 	            int num = Integer.parseInt(numStr);
-	            System.out.println(num);
+	            System.out.println(num + 10);
 	        } catch (NumberFormatException e) {
 	            System.out.println("数値に変換できません: " + numStr);
 	        }
 		
+		 //Q10
+		 int num;
+		 
+		 num = 50;
+		 
+		 String str = String.valueOf(num); 
+		 
+		 System.out.println("得点:" + str + "点");
+		 
 		//Q11
 		 int a =10;
 		 int b =20;

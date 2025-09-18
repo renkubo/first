@@ -1,11 +1,13 @@
 package curriculum_B;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Question2 {
 
 	public static void main(String[] args) {
 		Random rand = new Random();
+		Scanner scanner = new Scanner (System.in);
 		
 		//Q1
 		int score = 75;
@@ -103,10 +105,14 @@ public class Question2 {
 		}
 		
 		//Q8
-		String input = "";
-		if (input == null || input == "") {
+		String input = scanner.nextLine();
+		if (input == null || input.isEmpty()) {
 			System.out.println("入力が無効です");
 		}
+		else {
+			System.out.println("入力は有効です");
+		}
+		scanner.close();
 		
 		//Q9
 		int day = rand.nextInt(7)+1;
@@ -151,7 +157,7 @@ public class Question2 {
 		   System.out.println("夏");
 		   break;
 		case 9: case 10: case 11:
-			   System.out.println("冬");
+			   System.out.println("秋");
 			   break;
 
 		   default:

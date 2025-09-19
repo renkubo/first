@@ -6,23 +6,23 @@ public class Question4 {
 
 	public static void main(String[] args) {
 
-		// Q1 
+		// Q1
 		int[] numbers = { 1, 2, 3, 4, 5 };
-		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
+		for (int index = 0; index < numbers.length; index++) {
+			System.out.println(numbers[index]);
 		}
 
 		// Q2
 		numbers = new int[] { 10, 20, 30, 40, 50 };
-		for (int i = numbers.length - 1; i >= 0; i--) {
-			System.out.println(numbers[i]);
+		for (int index = numbers.length - 1; index >= 0; index--) {
+			System.out.println(numbers[index]);
 		}
 
-		// Q3 
+		// Q3
 		numbers = new int[] { 3, 5, 7, 9, 11 };
 		int sum = 0;
-		for (int i = 0; i < numbers.length; i++) {
-			sum += numbers[i];
+		for (int index = 0; index < numbers.length; index++) {
+			sum += numbers[index];
 		}
 		System.out.println("合計値: " + sum);
 
@@ -30,12 +30,12 @@ public class Question4 {
 		numbers = new int[] { 12, 7, 9, 21, 5, 18 };
 		int max = numbers[0];
 		int min = numbers[0];
-		for (int i = 1; i < numbers.length; i++) {
-			if (numbers[i] > max) {
-				max = numbers[i];
+		for (int index = 1; index < numbers.length; index++) {
+			if (numbers[index] > max) {
+				max = numbers[index];
 			}
-			if (numbers[i] < min) {
-				min = numbers[i];
+			if (numbers[index] < min) {
+				min = numbers[index];
 			}
 		}
 		System.out.println("最大値: " + max);
@@ -43,26 +43,21 @@ public class Question4 {
 
 		// Q5
 		numbers = new int[] { 1, 2, 3, 4, 5 };
-		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = numbers[i] * 2;
+		for (int index = 0; index < numbers.length; index++) {
+			numbers[index] = numbers[index] * 2;
 		}
 		for (int n : numbers) {
 			System.out.println(n);
 		}
 
-		//Q6
-		// 配列を用意
+		// Q6
 		numbers = new int[] { 4, 7, 10, 15, 20 };
 
-		// ユーザーから数値を入力
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("数値を入力してください: ");
 		int input = scanner.nextInt();
 
-		// 判定用フラグ
 		boolean found = false;
-
-		// 配列を走査して一致する値があるか確認
 		for (int n : numbers) {
 			if (n == input) {
 				found = true;
@@ -70,47 +65,42 @@ public class Question4 {
 			}
 		}
 
-		// 結果を表示
 		if (found) {
 			System.out.println(input + " は配列に含まれています。");
 		} else {
 			System.out.println(input + " は配列に含まれていません。");
 		}
 
-		scanner.close();
-
-		//Q7 2次元配列を用意
+		// Q7
 		int[][] array = {
 				{ 1, 2 },
 				{ 3, 4 },
 				{ 5, 6 }
 		};
 
-		for (int i = 0; i < array.length; i++) {
-			for (int j = 0; j < array[i].length; j++) {
-				System.out.print(array[i][j] + " ");
+		for (int row = 0; row < array.length; row++) {
+			for (int col = 0; col < array[row].length; col++) {
+				System.out.print(array[row][col] + " ");
 			}
 			System.out.println();
-
-			//Q8
-			array = new int[][] {
-					{ 10, 20, 30 },
-					{ 40, 50, 60 },
-					{ 70, 80, 90 }
-			};
-
-			sum = 0;
-
-			for (i = 0; i < array.length; i++) {
-				for (int j = 0; j < array[i].length; j++) {
-					sum += array[i][j];
-				}
-			}
-
-			System.out.println("配列の全要素の合計: " + sum);
 		}
 
-		//Q9 
+		// Q8
+		array = new int[][] {
+				{ 10, 20, 30 },
+				{ 40, 50, 60 },
+				{ 70, 80, 90 }
+		};
+
+		sum = 0;
+		for (int row = 0; row < array.length; row++) {
+			for (int col = 0; col < array[row].length; col++) {
+				sum += array[row][col];
+			}
+		}
+		System.out.println("配列の全要素の合計: " + sum);
+
+		// Q9
 		array = new int[][] {
 				{ 12, 15, 8 },
 				{ 6, 19, 25 },
@@ -120,14 +110,13 @@ public class Question4 {
 		max = array[0][0];
 		min = array[0][0];
 
-		// 2次元配列を走査
-		for (int i = 0; i < array.length; i++) {
-			for (int j = 0; j < array[i].length; j++) {
-				if (array[i][j] > max) {
-					max = array[i][j];
+		for (int row = 0; row < array.length; row++) {
+			for (int col = 0; col < array[row].length; col++) {
+				if (array[row][col] > max) {
+					max = array[row][col];
 				}
-				if (array[i][j] < min) {
-					min = array[i][j];
+				if (array[row][col] < min) {
+					min = array[row][col];
 				}
 			}
 		}
@@ -135,19 +124,21 @@ public class Question4 {
 		System.out.println("最大値: " + max);
 		System.out.println("最小値: " + min);
 
-		//Q10
+		// Q10
 		int[][][] arrays = {
 				{ { 1, 2 }, { 3, 4 } },
 				{ { 5, 6 }, { 7, 8 } }
 		};
 
-		for (int i = 0; i < arrays.length; i++) {
-			System.out.println("array[" + i + "]:");
-			for (int j = 0; j < arrays[i].length; j++) {
-				for (int k = 0; k < arrays[i][j].length; k++) {
-					System.out.println("array[" + i + "][" + j + "][" + k + "] = " + arrays[i][j][k]);
+		for (int x = 0; x < arrays.length; x++) {
+			System.out.println("array[" + x + "]:");
+			for (int y = 0; y < arrays[x].length; y++) {
+				for (int z = 0; z < arrays[x][y].length; z++) {
+					System.out.println("array[" + x + "][" + y + "][" + z + "] = " + arrays[x][y][z]);
 				}
 			}
 		}
+
+		scanner.close();
 	}
 }

@@ -112,7 +112,6 @@ public class Question2 {
 		else {
 			System.out.println("入力は有効です");
 		}
-		scanner.close();
 		
 		//Q9
 		int day = rand.nextInt(7)+1;
@@ -163,6 +162,7 @@ public class Question2 {
 		   default:
 		   System.out.println("無効な月です");
 		}
+		scanner.close();
 	}
 
 }

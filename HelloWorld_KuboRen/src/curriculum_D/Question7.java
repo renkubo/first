@@ -78,6 +78,7 @@ public class Question7 {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		 scanner.close();
 	}
 
 	// Daemonのステータスをファイルから読み込む

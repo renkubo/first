@@ -1,0 +1,14 @@
+12の攻撃 → DaemonのHP: 71
+Daemonの攻撃 → 12のHP: 73
+12の攻撃 → DaemonのHP: 57
+Daemonの攻撃 → 12のHP: 58
+12の攻撃 → DaemonのHP: 43
+Daemonの攻撃 → 12のHP: 43
+12の攻撃 → DaemonのHP: 29
+Daemonの攻撃 → 12のHP: 28
+12の攻撃 → DaemonのHP: 15
+Daemonの攻撃 → 12のHP: 13
+12の攻撃 → DaemonのHP: 1
+Daemonの攻撃 → 12のHP: 0
+=== バトル結果 ===
+Daemonの勝利！
